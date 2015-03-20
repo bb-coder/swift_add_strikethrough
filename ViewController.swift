@@ -26,6 +26,10 @@ class ViewController: UIViewController {
         
         mAttributeStr.addAttribute(NSStrikethroughStyleAttributeName, value:NSUnderlineStyle.StyleSingle.rawValue, range: NSRange(location: 2, length: 5))
         mAttributeStr.addAttribute(NSStrikethroughStyleAttributeName, value:NSUnderlineStyle.StyleNone.rawValue, range: NSRange(location: 0, length: 2))
+        mAttributeStr.addAttribute(NSBackgroundColorAttributeName, value:UIColor.greenColor(), range: NSRange(location: 0, length: 5))
+        mAttributeStr.addAttribute(NSBackgroundColorAttributeName, value:UIColor.blueColor(), range: NSRange(location: 5, length: 2))
+        mAttributeStr.addAttribute(NSForegroundColorAttributeName, value:UIColor.whiteColor(), range: NSRange(location: 2, length: 5))
+        mAttributeStr.addAttribute(NSForegroundColorAttributeName, value:UIColor.redColor(), range: NSRange(location: 0, length: 2))
         
         strikedLabel.attributedText = mAttributeStr
     }
